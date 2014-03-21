@@ -3,6 +3,8 @@ var Entity = function(entityOptions, env) {
   this.vehicle_ = entityOptions.vehicle;
   this.detector_ = entityOptions.detector;
 
+  this.speed_ = env.maxPlayerSpeed;
+
   env.timer.on('tick', function() {
     // ...
   })
